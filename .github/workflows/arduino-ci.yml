@@ -24,7 +24,6 @@ jobs:
       matrix:
         board:
           - { fqbn: "arduino:avr:uno", platform: "arduino:avr", name: "Arduino Uno" }
-          - { fqbn: "esp32:esp32:esp32", platform: "esp32:esp32", name: "ESP32", index-url: "https://espressif.github.io/arduino-esp32/package_esp32_index.json" }
     steps:
       - uses: actions/checkout@v4
       - uses: arduino/setup-arduino-cli@v2
